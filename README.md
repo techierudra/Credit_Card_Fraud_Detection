@@ -59,10 +59,6 @@ The models are evaluated based on accuracy, precision, recall, and classificatio
 
 Boxplots illustrate the reduction of outliers in key features (V14, V12, V10) after applying the outlier detection algorithms.
 
-## Contributors
-
-- techierudra
-
 
 ## License
 
