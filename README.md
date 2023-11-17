@@ -28,3 +28,7 @@ Include instructions on how to set up and run your data analytics project. Speci
 ```bash
 # Example command to run the analysis
 jupyter notebook Credit_Card_Fraud_Detection.ipynb
+
+
+Feel free to customize this template based on the specific details of your credit card fraud detection project. Include any additional sections or information that is relevant to your work.
+
