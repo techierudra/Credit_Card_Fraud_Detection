@@ -61,16 +61,13 @@ Boxplots illustrate the reduction of outliers in key features (V14, V12, V10) af
 
 ## Contributors
 
-- [Your Name](Your GitHub Profile)
-- [Collaborator 1](Collaborator 1 GitHub Profile)
-- [Collaborator 2](Collaborator 2 GitHub Profile)
+- techierudra
+
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
 
-- Mention any external libraries, datasets, or individuals whose work contributed to the project.
 
 
