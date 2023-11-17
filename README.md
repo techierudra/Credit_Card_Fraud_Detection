@@ -5,30 +5,72 @@
 
 ---
 
-## **Project Overview**
+## Context
 
-Explain the purpose of your data analytics project on credit card fraud detection. Provide a brief overview of the dataset and the techniques used for fraud detection.
+Credit card companies must be able to recognize fraudulent credit card transactions to prevent customers from being charged for unauthorized purchases. This project focuses on identifying such fraudulent transactions using data analytics and machine learning.
 
-## **Key Components**
+## Dataset Overview
 
-Highlight the key components of your credit card fraud detection project, including data preprocessing, feature engineering, machine learning algorithms used, and evaluation metrics.
+The dataset contains credit card transactions made by European cardholders in September 2013. It includes 284,807 transactions, with 492 instances of fraud, making it highly imbalanced. The features include PCA-transformed numerical variables, 'Time,' and 'Amount.'
 
-## **Data Analysis Techniques**
+### Inspiration
 
-Describe the data analysis techniques applied in your project, such as exploratory data analysis, statistical analysis, and visualization methods.
+The primary goal is to identify fraudulent credit card transactions. Given the class imbalance, accuracy will be measured using the Area Under the Precision-Recall Curve (AUPRC).
 
-## **Project Structure**
+## Project Structure
 
-Provide an outline of the project structure, detailing the purpose of each notebook or script. Mention any specific datasets used (if applicable).
+- **[Credit_Card_Fraud_Detection.ipynb](Credit_Card_Fraud_Detection.ipynb):** Jupyter Notebook containing the entire project code.
+- **[creditcard.csv](creditcard.csv):** Dataset file.
 
-## **Getting Started**
+## Exploratory Data Analysis (EDA)
 
-Include instructions on how to set up and run your data analytics project. Specify any prerequisites and provide step-by-step instructions.
+The project begins with exploratory data analysis to understand the dataset and its distribution.
 
-```bash
-# Example command to run the analysis
-jupyter notebook Credit_Card_Fraud_Detection.ipynb
+### Key EDA Visualizations
 
+- Class distribution bar plot, pie chart, and donut chart.
+- Histogram of transaction amount.
+- Scatter plot of time vs. amount for fraud and normal transactions.
 
-Feel free to customize this template based on the specific details of your credit card fraud detection project. Include any additional sections or information that is relevant to your work.
+## Data Preprocessing
+
+The dataset is analyzed and preprocessed, checking for missing values and exploring the distribution of features.
+
+## Model Prediction
+
+The following outlier detection algorithms are applied:
+
+1. **Isolation Forest Algorithm:** Detects anomalies based on the isolation of observations using decision trees.
+
+2. **Local Outlier Factor (LOF) Algorithm:** Computes the local density deviation of a given data point with respect to its neighbors.
+
+3. **Support Vector Machine (SVM):** Uses a one-class SVM for anomaly detection.
+
+### Model Evaluation
+
+The models are evaluated based on accuracy, precision, recall, and classification reports. Isolation Forest outperforms the other algorithms in detecting fraud cases.
+
+## Results
+
+- Isolation Forest detected 73 errors, LOF detected 97 errors, and SVM detected 8516 errors.
+- Isolation Forest achieved an accuracy of 99.74%, a precision of 30%, and a recall of 27% for fraud detection.
+
+## Feature Analysis
+
+Boxplots illustrate the reduction of outliers in key features (V14, V12, V10) after applying the outlier detection algorithms.
+
+## Contributors
+
+- [Your Name](Your GitHub Profile)
+- [Collaborator 1](Collaborator 1 GitHub Profile)
+- [Collaborator 2](Collaborator 2 GitHub Profile)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Mention any external libraries, datasets, or individuals whose work contributed to the project.
+
 
