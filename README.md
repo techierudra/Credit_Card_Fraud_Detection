@@ -20,7 +20,7 @@ The primary goal is to identify fraudulent credit card transactions. Given the c
 ## Project Structure
 
 - **[Credit_Card_Fraud_Detection.ipynb](Credit_Card_Fraud_Detection.ipynb):** Jupyter Notebook containing the entire project code.
-- **[creditcard.csv](creditcard.csv):** Dataset file.
+- **[creditcard.csv](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud):** Dataset file.
 
 ## Exploratory Data Analysis (EDA)
 
